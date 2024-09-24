@@ -13,6 +13,12 @@ services:
       - ./flarum-data/nginx:/etc/nginx/flarum
     ports:
       - 8888:80
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:80 || exit 1" ] # Check if the app is reachable
+      interval: 30s # Check every 30 seconds
+      timeout: 10s # Wait 10 seconds for the check to complete
+      retries: 3 # If it fails 3 times, mark the container as unhealthy
+      start_period: 10s # Wait 10 seconds before starting health checks
 networks:
   flarum-network:
     driver: bridge
