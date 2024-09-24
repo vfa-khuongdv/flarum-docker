@@ -18,7 +18,7 @@ ENV GID=991 \
   DEBUG=false \
   LOG_TO_STDOUT=false \
   GITHUB_TOKEN_AUTH=false \
-  FLARUM_PORT=8888
+  FLARUM_PORT=80
 
 RUN apk add --no-progress --no-cache \
   curl \
@@ -69,4 +69,4 @@ RUN chmod +x /usr/local/bin/* /etc/s6.d/*/run /etc/s6.d/.s6-svscan/*
 VOLUME /etc/nginx/flarum /flarum/app/extensions /flarum/app/public/assets /flarum/app/storage/logs
 CMD ["/usr/local/bin/startup"]
 
-EXPOSE 8888
+EXPOSE 80/tcp
