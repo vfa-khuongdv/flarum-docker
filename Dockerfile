@@ -62,7 +62,7 @@ RUN mkdir -p /run/php /flarum
 
 COPY flarum /flarum
 
-RUN cd /flarum/app && composer
+RUN cd /flarum/app && composer install
 
 COPY rootfs /
 RUN chmod +x /usr/local/bin/* /etc/s6.d/*/run /etc/s6.d/.s6-svscan/*
