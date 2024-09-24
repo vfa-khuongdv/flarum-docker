@@ -1,0 +1,5 @@
+.env
+/flarum/app/vendor
+/mysql
+/flarum-data
+*.DS_Store
