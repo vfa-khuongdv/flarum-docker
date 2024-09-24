@@ -62,6 +62,8 @@ RUN mkdir -p /run/php /flarum
 
 COPY flarum /flarum
 
+RUN chmod -R 775 /flarum/app/
+
 RUN cd /flarum/app && composer install
 
 COPY rootfs /
