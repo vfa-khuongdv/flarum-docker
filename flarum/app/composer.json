@@ -24,12 +24,12 @@
         "askvortsov/flarum-rich-text": "*",
         "clarkwinkelmann/flarum-ext-emojionearea": "^1.0",
         "ffans/clipboardjs": "^1.0",
-        "flarum/core": "^1.3",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
+        "flarum/core": "^1.3",
         "flarum/emoji": "*",
-        "flarum/lang-english": "*",
         "flarum/flags": "*",
+        "flarum/lang-english": "*",
         "flarum/likes": "*",
         "flarum/lock": "*",
         "flarum/markdown": "*",
@@ -45,6 +45,7 @@
         "fof/reactions": "*",
         "fof/share-social": "^1.2",
         "fof/upload": "1.2.3",
+        "neoncube/flarum-private-messages": "*",
         "v17development/flarum-blog": "^0.7.7"
     },
     "config": {
